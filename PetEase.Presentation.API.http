@@ -1,0 +1,6 @@
+@PetEase.Presentation.API_HostAddress = http://localhost:5156
+
+GET {{PetEase.Presentation.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

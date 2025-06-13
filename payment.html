@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petease - Payment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="petease.jpg" alt="Petease Logo">
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#programs">Programs</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                    <li><a href="login.html" class="sign-in">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section class="form-section">
+            <div class="container">
+                <div class="form-card payment-card">
+                    <h2>Payment Gateway</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cardHolderName">Card Holder Name</label>
+                            <input type="text" id="cardHolderName" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="expirationMonth">Expiration</label>
+                            <div class="expiration-cvv">
+                                <input type="text" id="expirationMonth" placeholder="MM" maxlength="2" required>
+                                <span>/</span>
+                                <input type="text" id="expirationYear" placeholder="YY" maxlength="2" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" placeholder="XXX" maxlength="4" required>
+                        </div>
+                        <button type="submit" class="btn-submit">Pay Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col contact-info">
+                <p>+1201000009999</p>
+                <p>petease@gmail.com</p>
+            </div>
+            <div class="footer-col quick-links">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="index.html#programs">Programs</a></li>
+                    <li><a href="#">About Petease</a></li>
+                </ul>
+            </div>
+            <div class="footer-col follow-us">
+                <h3>FOLLOW US</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 PETEASE. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js.js"></script>
+</body>
+
+</html>
